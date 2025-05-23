@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Obtaing Current Time</title>
+    <script>
+      function showTime() {
+        let x = new Date();
+        let str = x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+        document.write(`Current time is :${str} `);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="showTime()">ShowCurrent Time</button>
+  </body>
+</html>

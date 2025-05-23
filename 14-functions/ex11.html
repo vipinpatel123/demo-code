@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      let id;
+
+      function startWatch() {
+        console.log("Starting the watch...");
+        id = setTimeout(function () {
+          let current = new Date();
+          console.log(current);
+        }, 1000);
+      }
+
+      function stopWatch() {
+        clearTimeout(id);
+        console.log("Watch stopped ...");
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="startWatch()">Start Watch</button>
+    <button onclick="stopWatch()">Stop Watch</button>
+  </body>
+</html>

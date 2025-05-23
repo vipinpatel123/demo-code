@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function fun1() {
+        let a = 10; // ya value global nahi he kyu ki ya function ke ander he
+        alert(` Inside fun1 a is ${a}`);
+      }
+      function fun2() {
+        let a = 10;
+        alert(`Inside fun2 a is ${a}`);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="fun1()">Call fun1</button>
+    <button onclick="fun2()">Call fun2</button>
+  </body>
+</html>

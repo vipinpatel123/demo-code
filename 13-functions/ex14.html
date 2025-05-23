@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function fun1() {
+        var a = 10; // var inside the function
+        alert(` Inside fun1 a is ${a}`);
+        a++;
+      }
+      function fun2() {
+        let a = 10;
+        alert(`Inside fun2 a is ${a} and global a is ${window.a}`);
+        a++;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="fun1()">Call fun1</button>
+    <button onclick="fun2()">Call fun2</button>
+  </body>
+</html>

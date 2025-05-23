@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      let id;
+      let x = function () {
+        let current = new Date();
+        console.log(current);
+      };
+
+      function startWatch() {
+        console.log("Starting the watch...");
+        id = setInterval(x, 1000);
+      }
+
+      function stopWatch() {
+        clearInterval(id);
+        console.log("Watch stopped ...");
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="startWatch()">Start Watch</button>
+    <button onclick="stopWatch()">Stop Watch</button>
+  </body>
+</html>

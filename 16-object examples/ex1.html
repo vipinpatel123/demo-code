@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checking existence of a property</title>
+    <script>
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.color = "blue";
+      myCar.year = 2022;
+      console.log("year" in myCar); //true
+      console.log(myCar); //will show all properties( name, color and year)
+      delete myCar.year; // will remove year
+      console.log("After removing year");
+      console.log("year" in myCar); //false
+      console.log(myCar); // will showw all properties ( name and color)
+    </script>
+  </head>
+  <body></body>
+</html>

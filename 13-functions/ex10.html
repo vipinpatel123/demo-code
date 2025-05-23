@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function fun1() {
+        let a = 10;
+        alert(` Inside fun1 a is ${a}`);
+        a++; // function ke ander ho ke karn "a" ke value me koyi chnage nhi hua
+      }
+      function fun2() {
+        let a = 10;
+        alert(`Inside fun2 a is ${a}`);
+        a++;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="fun1()">Call fun1</button>
+    <button onclick="fun2()">Call fun2</button>
+  </body>
+</html>

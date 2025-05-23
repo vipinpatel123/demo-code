@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adding Method Using Object Literal</title>
+    <script>
+      let myCar = {
+        name: "Baleno",
+        color: "blue",
+        year: 2022,
+        start: function () {
+          console.log("car is starting");
+        },
+        show: function () {
+          console.log(myCar.name, myCar.color, myCar.year);
+        },
+      };
+      myCar.show();
+      myCar.start();
+    </script>
+  </head>
+  <body></body>
+</html>

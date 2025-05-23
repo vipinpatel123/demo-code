@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Using this</title>
+    <script>
+      var a = 10;
+      function show() {
+        var a = 20;
+        document.write(`a is ${a}<br>`);
+        document.write(`a is ${this.a}<br>`);
+      }
+      show();
+    </script>
+  </head>
+  <body></body>
+</html>

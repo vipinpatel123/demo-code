@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 7</title>
+    <script>
+      let arr = [10, , 30, , 50];
+      document.write(`Size of arr is ${arr.length}<br>`);
+      //The for in loop does not visit indexes with undefined value
+      for (let i in arr) {
+        document.write(`index:${i}, value:${arr[i]}<br>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

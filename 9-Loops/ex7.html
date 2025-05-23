@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loop demo</title>
+    <script>
+      let n = Number(prompt("enter an int"));
+      let soe = 0,
+        sod = 0;
+      for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+          soe = soe + i;
+        } else {
+          sod = sod + i;
+        }
+      }
+      document.write(`Sum of even nos is ${soe}<br>Sum of odd nos is ${sod}`);
+    </script>
+  </head>
+  <body></body>
+</html>

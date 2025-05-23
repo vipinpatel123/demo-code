@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function showWatch() {
+        let current = new Date();
+        console.log(current);
+      }
+      function startWatch() {
+        console.log("Starting the watch...");
+        setInterval(showWatch, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="startWatch()">Start Watch</button>
+  </body>
+</html>

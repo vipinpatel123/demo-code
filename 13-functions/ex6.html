@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function calculate() {
+        let sum = 0;
+        for (let x of arguments) {
+          sum += x;
+        }
+        let avg = sum / arguments.length;
+        document.write(` Sum is ${sum},Avg is ${avg.toFixed(2)}<br>`);
+      }
+      calculate(3, 4, 5);
+      calculate(3, 4);
+      calculate(3, 4, 5, 6);
+    </script>
+  </head>
+  <body></body>
+</html>

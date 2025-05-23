@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 10</title>
+    <script>
+      let arr = [];
+      let x;
+      do {
+        x = Number(prompt("enter a no and press 0 to stop", "0"));
+        if (x === 0) break;
+        arr.push(x);
+      } while (true);
+      document.write("Nos inputted are<br>");
+      let sum = 0;
+      for (x of arr) {
+        document.write(`${x}<br>`);
+        sum = sum + x;
+      }
+      document.write(`Sum is ${sum}<br>`);
+      document.write(`Avg is ${(sum / arr.length).toFixed(2)}<be>`);
+    </script>
+  </head>
+  <body></body>
+</html>

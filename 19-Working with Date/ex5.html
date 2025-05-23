@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise</title>
+    <script>
+      function calculateBirthDay() {
+        let bday = prompt("Enter your birthday(yyyy-mm-dd)");
+        let yourBday = new Date(bday);
+        let str = "";
+        switch (yourBday.getDay()) {
+          case 0:
+            str = "Sunday";
+            break;
+          case 1:
+            str = "Monday";
+            break;
+          case 2:
+            str = "Tuesday";
+            break;
+          case 3:
+            str = "Wednesday";
+            break;
+          case 4:
+            str = "Thursday";
+            break;
+          case 5:
+            str = "Friday";
+            break;
+          case 6:
+            str = "Saturday";
+        }
+        document.write(` You were born on ${str}`);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="calculateBirthDay()">Show my Birth Day</button>
+  </body>
+</html>

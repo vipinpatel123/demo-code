@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Using slice() For Extracting A SubArray</title>
+    <script>
+      let fruits = ["guava", "apple", "grapes", "banana"];
+      document.write(`Size:${fruits.length}<br>`);
+      document.write(`Values:${fruits}<br>`);
+
+      let fruits2 = fruits.slice(1, 3);
+      document.write(`After slicing Original Array Values:${fruits}<br>`);
+      document.write(
+        `After slicing Original Array lenght:${fruits.length}<br>`
+      );
+      document.write(`Slced array lenght:${fruits2.length}<br>`);
+      document.write(`Slced array Values:${fruits2}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

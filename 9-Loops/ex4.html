@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loop demo</title>
+    <script>
+      let sum = 0;
+      let n,
+        count = 0;
+      do {
+        n = Number(prompt("Enter an int"));
+        sum = sum + n;
+        count++;
+      } while (n != 0);
+      document.write(`Sum of all the nos you gave is ${sum}`);
+      document.write(`<br>Avg of all the nos you gave is ${sum / count}`);
+    </script>
+  </head>
+  <body></body>
+</html>
