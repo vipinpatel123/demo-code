@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Example -4</title>
+    <script>
+      function add(...args) {
+        let sum=0;
+        args.forEach((x)=>{
+            sum=sum+x;
+        });
+        document.write(`sum is ${sum}<br>`);
+      }
+      let nums = [10, 20, 30, 40];
+      add(...nums);
+      let nums2 = [10, 20];
+      add(...nums2);
+      let nums3 = [10, 20, 30, 40,50,60];
+      add(...nums3);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Event Demo</title>
+    <script>
+      function changecolor(div) {
+        let colorName ;
+        switch (div.id) {
+          case "div1":
+            colorName = "red";
+            break;
+          case "div2":
+            colorName = "yellow";
+        }
+        div.style.backgroundColor = colorName;
+      }
+    </script>
+    <style type="text/css">
+      #div1 {
+        width: 300px;
+        height: 200px;
+        border: solid 1px black;
+      }
+
+      #div2 {
+        width: 300px;
+        height: 200px;
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" onclick="changecolor(this)">
+      Click to change color to RED
+    </div>
+    <div id="div2" onclick="changecolor(this)">
+      Click to change color to YELLOW
+    </div>
+  </body>
+</html>

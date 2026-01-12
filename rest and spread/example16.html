@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merging Object Using Spread</title>
+    <script>
+      let person = { age: 23, name: "Praveen" };
+      let address = { city: "Bhopal", locality: "Indrapuri" };
+      let person_addr = { ...person, ...address }; // Deep Copy
+      document.write(`${person_addr.age},${person_addr.name}<br>`);
+      document.write(`${person_addr.city},${person_addr.locality}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

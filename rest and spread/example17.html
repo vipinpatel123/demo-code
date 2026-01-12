@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merging Object Using Spread</title>
+    <script>
+      let student1 = {
+        roll: 12,
+        name: "Sumit",
+        marks: { phy: 50, chem: 60, maths: 70 },
+      };
+      let student2 = { ...student1 };
+      document.write(student1 === student2);//false
+      document.write("<br>");
+      student2.marks.phy=100;
+      document.write(student2.marks.phy);//100
+      document.write("<br>");
+      document.write(student1.marks.phy);//100
+    </script>
+  </head>
+  <body></body>
+</html>

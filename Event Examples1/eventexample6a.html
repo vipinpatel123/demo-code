@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Event Demo</title>
+		<script>
+			function changeColor(ref) {
+				let text = ref.nextSibling;
+				let str = text.nodeValue.trim();
+				switch (str) {
+					case "Red":
+						document.body.bgColor = "red";
+						break;
+					case "Green":
+						document.body.bgColor = "green";
+						break;
+					case "Blue":
+						document.body.bgColor = "blue";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<h3>Select an option to change page background color</h3>
+			<input type="radio" name="r1" onclick="changeColor(this)" /> Red
+			<br />
+			<input type="radio" name="r1" onclick="changeColor(this)" /> Green
+			<br />
+			<input type="radio" name="r1" onclick="changeColor(this)" /> Blue
+			<br />
+		</div>
+	</body>
+</html>

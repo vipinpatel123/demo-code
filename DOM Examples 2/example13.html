@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Understanding classList</title>
+		<link rel="stylesheet" type="text/css" href="mystyles.css" />
+		<script>
+			function decorate() {
+				let para = document.querySelector("p");
+				para.classList.add("error");
+			}
+
+			function undecorate() {
+				let para = document.querySelector("p");
+				para.classList.remove("error");
+			}
+			function toggleCss() {
+				let para = document.querySelector("p");
+				para.classList.toggle("error");
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+			molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae error mollitia
+			impedit! Deserunt, nihil!
+		</p>
+
+		<input type="button" value="Add class" onclick="decorate();" />
+		<input type="button" value="Remove class" onclick="undecorate();" />
+		<input type="button" value="Toggle class" onclick="toggleCss();" />
+	</body>
+</html>

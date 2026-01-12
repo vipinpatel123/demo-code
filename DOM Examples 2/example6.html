@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Sharma Computer Academy</title>
+		<script>
+			function changeLogo() {
+				// Change the image to bakery.jpg as well as the title
+				let img=document.querySelector("img");
+				img.setAttribute("src","../images/bakery.jpg");
+				let h3=document.querySelector("h3");
+				h3.innerText="Bakery";
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Eiffel Tower</h3>
+		<img src="../images/eiffel.jpg" /><br />
+		<input type="button" value="Change Logo" onclick="changeLogo()" />
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Parameter Ex-1</title>
+    <script>
+      function add(...args) {
+        document.write(`length of args is ${args.length}<br>`);
+        let sum = 0;
+        args.forEach((x) => {
+          sum += x;
+        });
+        document.write(`Sum is ${sum}<br><br>`);
+      }
+      add(10, 20); //sum is 30
+      add(5, 7, 9, 12); //sum is 12
+      add(6, 8, 9); //sum is 14
+    </script>
+  </head>
+  <body></body>
+</html>

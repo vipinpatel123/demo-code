@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Understanding style</title>
+    <style>
+      .decorate {
+        color: blue;
+        font-weight: bold;
+        font-style: italic;
+        border: 2px dotted lightpink;
+      }
+    </style>
+    <script>
+      function showDate() {
+        //Write code to insert current system date in the <p> tag
+        let para = document.querySelector("p");
+        let today = new Date();
+        let str =
+          today.getDate() +
+          "/" +
+          (today.getMonth() + 1) +
+          "/" +
+          today.getFullYear();
+        para.innerText = str;
+        para.classList.add("decorate");
+      }
+      function removeCss(){
+        let para = document.querySelector("p");
+        para.classList.remove("decorate");
+      }
+      function toggleCss(){
+        let para = document.querySelector("p");
+        para.classList.toggle("decorate");
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>Click the button to display current date</p>
+    <input type="button" value="show date" onclick="showDate();" />
+    <input type="button" value="Remove CSS" onclick="removeCss();" />
+    <input type="button" value="Add/Remove CSS" onclick="toggleCss();" />
+  </body>
+</html>

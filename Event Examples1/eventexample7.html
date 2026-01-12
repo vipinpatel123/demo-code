@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Cancelling The Default Behaviour</title>
+		<script>
+			function verify() {
+				let ans = confirm("Are you sure to visit FB ?");
+				return ans;
+			}
+		</script>
+	</head>
+
+	<body>
+		<a href="http://www.facebook.com" onclick="return(verify())"
+			>Click Me To Visit Facebook</a
+		>
+	</body>
+</html>

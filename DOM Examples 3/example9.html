@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Using removeChild()</title>
+		<script>
+			function removePara() {
+				//Remove first child of div
+				let div=document.querySelector("div");
+				let firstPara=div.firstElementChild;
+				div.removeChild(firstPara)
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="d1">
+			<p id="p1">This is first paragraph.</p>
+			<p id="p2">This is second paragraph.</p>
+		</div>
+		<input type="button" value="remove para" onclick="removePara();" />
+	</body>
+</html>

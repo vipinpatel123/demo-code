@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Using insertBefore()</title>
+    <script>
+      function addPara() {
+        let newPara = document.createElement("p");
+        let newText = document.createTextNode("I am para 3");
+		newPara.appendChild(newText);
+		let div=document.querySelector("div");
+		let firstPara=div.firstElementChild;
+		div.insertBefore(newPara,firstPara);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="d1">
+      <p id="p1">This is first paragraph.</p>
+      <p id="p2">This is second paragraph.</p>
+    </div>
+    <input type="button" value="add new para" onclick="addPara();" />
+  </body>
+</html>
